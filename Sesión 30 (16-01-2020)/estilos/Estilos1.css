@@ -1,0 +1,86 @@
+@charset "UTF-8";
+.contenedorgridaligncontent, .contenedorgridjustifycontentspacearound, .contenedorgridjustifycontentcenter, .contenedorgridjustifycontentend, .contenedorgridtemprows, .contenedorgridtempcolumns, .contenedorgridlinea, .contenedorgrid {
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  column-gap: 30px;
+  /*Espacio entre columnas*/
+  row-gap: 40px;
+  /*Espacio entre filas*/
+  box-sizing: border-box;
+  /*Borde dentro del ancho del contenedor*/
+}
+
+.contenedorgridaligncontent__elementohijo, .contenedorgridjustifycontentspacearound__elementohijo, .contenedorgridjustifycontentcenter__elementohijo, .contenedorgridjustifycontentend__elementohijo, .contenedorgridtemprows__elementohijo, .contenedorgridtempcolumns__elementohijo, .contenedorgridlinea__elementohijo, .contenedorgrid__elementohijo7, .contenedorgrid__elementohijo2, .contenedorgrid__elementohijo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedorgrid {
+  display: grid;
+  /*Se muestra como bloque*/
+}
+.contenedorgrid__elementohijo2 {
+  grid-row-start: 1;
+  /*Para situarlo en una fila y en una columna en concreto, tendría que jugar con las dos propiedades*/
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.contenedorgrid__elementohijo7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.contenedorgridlinea {
+  display: inline-grid;
+  /*Se muestra en línea*/
+}
+.contenedorgridtempcolumns {
+  display: grid;
+  /*Se muestra como bloque*/
+  /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+  grid-template-columns: repeat(5, 20%);
+  gap: 0;
+  /*Propiedad resumen de column-gap y row-gap*/
+}
+.contenedorgridtemprows {
+  display: grid;
+  /*Se muestra como bloque*/
+  /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+  grid-template-columns: repeat(5, 20%);
+  gap: 0;
+  /*Propiedad resumen de column-gap y row-gap*/
+  grid-template-rows: 200px 300px 200px;
+}
+.contenedorgridjustifycontentend {
+  display: grid;
+  /*Se muestra en línea*/
+  justify-content: end;
+  margin-top: 30px;
+}
+.contenedorgridjustifycontentcenter {
+  display: grid;
+  /*Se muestra en línea*/
+  justify-content: center;
+  margin-top: 30px;
+}
+.contenedorgridjustifycontentspacearound {
+  display: grid;
+  /*Se muestra en línea*/
+  justify-content: spacearound;
+  margin-top: 30px;
+}
+.contenedorgridaligncontent {
+  display: grid;
+  /*Se muestra en línea*/
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+  min-height: 600px;
+}
+
+/*# sourceMappingURL=Estilos1.css.map */
