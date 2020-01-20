@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes responsivas</title>
+    <link rel="stylesheet" href="estilos/Estilos2.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contenedor__elementohijo">
+            <img src="img/Imagen1.jpg" class="contenedor__elementohijo__imagenresponsiva">
+        </div>
+        <div class="contenedor__elementohijo">
+            <img src="img/Imagen2.jpg" class="contenedor__elementohijo__imagenresponsiva">
+        </div>
+    </div>
+
+    <img src="img/Imagen3.jpg" class="imagenresponsivamaxwidth">
+
+
+    <div class="contenedorimagen">
+
+    </div>
+
+
+    <div style="width:100%;height:400px;margin-top:50px;">
+
+        <img src="img/Imagen5.jpg" alt="Imagen1" style="float:left;width:50%;height:100%;object-fit: scale-down;">
+        <!--Escala la imagen, pero no la deforma. Mantiene la misma relación de aspecto-->
+
+        <img src="img/Imagen6.jpg" alt="Imagen2" style="float:left;width:50%;height:100%;object-fit: cover;">
+        <!--Recorta manteniendo las proporciones-->
+
+    </div>
+</body>
+
+</html>
